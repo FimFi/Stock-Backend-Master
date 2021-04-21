@@ -1,8 +1,10 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from "@nestjs/config";
-import { DatabaseModule } from './chat/infrastructure/database.module';
+
 import * as Joi from "@hapi/joi";
-import { StockModule } from "../../../Stock-Backend-Master/stock-backend-master/src/api/stock.module";
+import {StockModule} from "./api/stock.module";
+import {DatabaseModule} from "./infrastructure/database.module";
+
 
 @Module({
   imports: [

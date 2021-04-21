@@ -13,7 +13,7 @@ export class Stock{
   public initValue: number;
 
   @Column ({unique: false})
-  public currentValue: number;
+  public currValue: number;
 
   @Column ({unique: false})
   public description: string;
